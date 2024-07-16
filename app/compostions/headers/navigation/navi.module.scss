@@ -1,0 +1,22 @@
+.flexbox{
+    display: flex;
+    gap : 20px;
+    height: 64px;
+    background-color: white;
+    // border-bottom: 1px solid black;
+    align-items: center;
+    width: min(800px , 100vw);
+    justify-content: center;
+    margin: auto;
+
+    ul{
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    .logo{
+        width: 40px;
+                
+    }
+}
