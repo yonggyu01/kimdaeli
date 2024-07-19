@@ -2,6 +2,7 @@
 import React,{ FC }  from "react"
 import {Navilist} from "./navilist";
 import Navicss from './navi.module.scss'
+import Searching from "./navisearch";
 export const Navi:FC =() =>{
     const navilist = [
         {
@@ -23,6 +24,7 @@ export const Navi:FC =() =>{
                 <img src="/kimlogo(1).png" alt="logo" className={Navicss.logo} />
             </a>
             <Navilist navilist={navilist}></Navilist>
+            <Searching></Searching>            
         </div>
     )
 }

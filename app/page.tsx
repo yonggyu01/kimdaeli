@@ -1,6 +1,11 @@
 import Image from "next/image";
-import main from './style/main.module.scss'
+import main from './styles/main.module.scss'
+import {useBearStore} from "./store/store";
+
+
 export default function Home() {
+// const store = useBearStore()
+  // console.log(store)
   return (
     <main className={main.background}>
       <div className={main.text}>

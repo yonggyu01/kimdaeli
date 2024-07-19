@@ -12,3 +12,39 @@
         padding-top: 10px;;
     }
 }
+.line{
+    width: min(800px, 100vw);
+    margin: 20px auto;
+    h1{
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap : 50px;
+        margin-bottom: 10px;
+        li{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .wrapbox{
+                width: 230px;
+            }
+            img {
+                border-radius: 25px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+    }
+    button{
+        background-color: burlywood;
+        border-radius: 20px;
+        width: 200px;
+        height: 2em;
+    }
+}
