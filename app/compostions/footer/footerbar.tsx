@@ -4,6 +4,9 @@ import foo from './footer.module.scss';
 
 const Footermenu :React.FC = ()=>{
     return (
+        <div className={foo.center}>
+
+        
         <ul className={foo.wrap}>
             <li className={foo.sbtn}>
             <a href='#none'> 
@@ -47,6 +50,7 @@ const Footermenu :React.FC = ()=>{
             </li>
             <div className={foo.indi}></div>
         </ul>
+        </div>
     )
 }
 
