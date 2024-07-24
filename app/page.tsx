@@ -1,6 +1,6 @@
 import Image from "next/image";
 import main from './styles/main.module.scss'
-import {useBearStore} from "./store/store";
+// import {useBearStore} from "./store/store";
 
 
 export default function Home() {

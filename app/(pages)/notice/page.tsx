@@ -1,5 +1,6 @@
 import React,{ FC }  from "react"
 import notice from './notice.module.scss'
+import Not from './not'
  const Notice :FC = ()=>{
     return (
         <div className={notice.notice}>
@@ -7,7 +8,7 @@ import notice from './notice.module.scss'
             <h1>다양한 동네업체를 볼 수 있어요</h1>
             <button>우리 동네 사람들이
             이용하는 업체를 찾아보세요.</button>
-
+            <Not></Not>
             </div>
         </div>
     )
