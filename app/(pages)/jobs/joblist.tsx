@@ -1,8 +1,9 @@
 import React,{ FC }  from "react"
 import job from './jobs.module.scss';
 import { Sample } from "@/app/models/model";
-
+import {db} from '@/app/firebase'
  const Listjob :FC = ()=>{
+    console.log(db,'db')    
     const sample:Sample[] =[ 
         {
             title: '급구 사람한명',
