@@ -44,6 +44,7 @@ export async function GET (req : NextRequest)  {
 return data
     }
     export async function POST (req : NextRequest)  {
+      console.log(req , 'axios 로 받을거임')
       const {content,create,userid} =await req.json()
       const calldata = await Additem(content,create,userid) 
       const response = {

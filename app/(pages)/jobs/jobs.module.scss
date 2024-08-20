@@ -40,11 +40,13 @@
     .btn{
         display: flex;
         justify-content: center;
+        height: 150px;
+        gap:5px
     }
     button{
         background-color: burlywood;
         border-radius: 20px;
-        width: 200px;
+        width: min(50%, 140px);
         height: 2em;
     }
 }

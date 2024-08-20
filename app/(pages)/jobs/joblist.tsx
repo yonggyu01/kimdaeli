@@ -1,9 +1,13 @@
+'use client'
 import React,{ FC }  from "react"
 import job from './jobs.module.scss';
 import { Sample } from "@/app/models/model";
 import {db} from '@/app/firebase'
+import axios, { AxiosResponse } from "axios";
+
  const Listjob :FC = ()=>{
     console.log(db,'db')    
+
     const sample:Sample[] =[ 
         {
             title: '급구 사람한명',
@@ -34,6 +38,16 @@ import {db} from '@/app/firebase'
              src : '/kimlogo.jpg'
         },
     ]
+    async function Testcode (){
+        // 리엑트 쿼리로 처리해야함   테스트 코드 실행해보자
+       let postdata:AxiosResponse = await axios.post('/api',{
+          content : 'hi',
+          create : 2024,
+          userid : 'kim'})
+          const result = postdata.data
+          return result
+          
+       }
     return (
         <div className={job.line}>
 
@@ -50,6 +64,9 @@ import {db} from '@/app/firebase'
                 </li>)}
             </ul>
             <div className={job.btn}>
+            <button onClick={()=>{
+                Testcode()
+            }}>테스트 글올리기</button>
             <button>구인글 더보기</button>
             </div>
         </div>
