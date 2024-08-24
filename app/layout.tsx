@@ -7,6 +7,7 @@ import {
   QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query'
+import ReactQueryProviders from "./hooks/useQuerystore";
 import Footermenu from './compostions/footer/footerbar'
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,10 +27,9 @@ export default function RootLayout({
      
       <body className={inter.className}>
       <Navi></Navi>
-      {/* <QueryClientProvider client={queryClient}> */}
+      <ReactQueryProviders>
         {children}
-
-      {/* </QueryClientProvider> */}
+      </ReactQueryProviders>
         <Footermenu></Footermenu>
         </body>
     </html>
